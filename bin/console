@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'dotenv'
+require 'pry'
+
+Dotenv.load('.env.development.local', '.env.development')
+
+require 'nxt_cop'
+
+NxtCop::Config.require_clients
+
+Pry.start

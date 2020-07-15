@@ -30,6 +30,8 @@ Lint/AmbiguousBlockAssociation:
     - spec/**/*
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
+Lint/DuplicateElsifCondition:
+  Enabled: true
 Lint/Loop:
   Enabled: false
 Lint/MixedRegexpCaptureTypes:
