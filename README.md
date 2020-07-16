@@ -44,12 +44,14 @@ You do not need to include rubocop directly in your application's dependencies. 
 
 It is also possible to override styles or add styles to your application.
 
+**NOTE:** Don't configure `AllCops` as it will override many of the rules in this gem.
+
 ```
 inherit_gem:
   nxt_cop:
     - default.yml
 
-AllCops:
+Lint/Style:
   Exclude:
     - db/schema.rb
     - db/migrate/*.rb
