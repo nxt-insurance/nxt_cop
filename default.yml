@@ -47,6 +47,8 @@ Style/SymbolArray:
   Enabled: true
 Style/TrailingCommaInHashLiteral:
   Enabled: true
+Style/TrailingCommaInArguments:
+  Enabled: true
 Style/WordArray:
   Enabled: true
 Security:
