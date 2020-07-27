@@ -24,6 +24,8 @@ Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
+Layout/TrailingEmptyLines:
+  Enabled: true
 Lint:
   Enabled: true
 Lint/AmbiguousBlockAssociation:
