@@ -22,6 +22,10 @@ Layout/IndentationStyle:
   Enabled: true
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
 Layout/TrailingEmptyLines:
