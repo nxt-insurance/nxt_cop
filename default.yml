@@ -35,17 +35,51 @@ Lint:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: true
+Lint/ConstantDefinitionInBlock:
+  Enabled: true
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 Lint/DuplicateElsifCondition:
   Enabled: true
+Lint/DuplicateRequire:
+  Enabled: true
+Lint/DuplicateRescueException:
+  Enabled: true
+Lint/EmptyConditionalBody:
+  Enabled: true
+Lint/EmptyFile:
+  Enabled: true
+Lint/FloatComparison:
+  Enabled: true
+Lint/IdentityComparison:
+  Enabled: true
 Lint/Loop:
   Enabled: false
+Lint/MissingSuper:
+  Enabled: true
 Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+Lint/OutOfRangeRegexpRef:
   Enabled: true
 Lint/RaiseException:
   Enabled: true
+Lint/SelfAssignment:
+  Enabled: true
 Lint/StructNewOverride:
+  Enabled: true
+Lint/TopLevelReturnWithArgument:
+  Enabled: true
+Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+Lint/UnreachableLoop:
+  Enabled: true
+Lint/UselessMethodDefinition:
+  Enabled: true
+Lint/UselessTimes:
+  Enabled: true
+Style/MutableConstant:
   Enabled: true
 Style/StringLiterals:
   Enabled: true
