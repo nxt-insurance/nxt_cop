@@ -1,3 +1,11 @@
+# v1.0.7 2020-09-29
+
+Updated Rubocop Version
+
+### Added
+- All new Cops
+- Style/MutableConstant
+
 # v1.0.6 2020-08-03
 
 ### Added
