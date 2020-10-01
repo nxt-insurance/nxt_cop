@@ -58,7 +58,7 @@ Lint/IdentityComparison:
 Lint/Loop:
   Enabled: false
 Lint/MissingSuper:
-  Enabled: true
+  Enabled: false
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 Lint/OutOfRangeRegexpRef:
