@@ -1,3 +1,8 @@
+# v1.0.8 2020-10-01
+
+### Removed
+- Lint/MissingSuper
+
 # v1.0.7 2020-09-29
 
 Updated Rubocop Version
