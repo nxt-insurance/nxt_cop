@@ -30,6 +30,10 @@ Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
 Layout/TrailingEmptyLines:
   Enabled: true
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: no_empty_lines
+Layout/EmptyLinesAroundBlockBody:
+  EnforcedStyle: no_empty_lines
 Lint:
   Enabled: true
 Lint/AmbiguousBlockAssociation:
