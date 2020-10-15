@@ -1,3 +1,9 @@
+# v1.0.9 2020-10-15
+
+### Added
+- `Layout/EmptyLinesAroundClassBody`
+- `Layout/EmptyLinesAroundBlockBody`
+
 # v1.0.8 2020-10-01
 
 ### Removed
