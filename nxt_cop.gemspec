@@ -14,11 +14,11 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = 'https://rubygems.pkg.github.com/nxt-insurance'
+    spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
     spec.metadata['homepage_uri'] = spec.homepage
-    spec.metadata['source_code_uri'] = 'https://github.com/nxt-insurance/nxt_core'
-    spec.metadata['changelog_uri'] = 'https://github.com/nxt-insurance/nxt_core/CHANGELOG.md'
+    spec.metadata['source_code_uri'] = 'https://github.com/nxt-insurance/nxt_cop'
+    spec.metadata['changelog_uri'] = 'https://github.com/nxt-insurance/nxt_cop/CHANGELOG.md'
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
       'public gem pushes.'
