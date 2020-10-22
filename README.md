@@ -40,7 +40,7 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependencies. nxt_copt will include a specific version of `rubocop` that is shared across all projects.
+You do not need to include rubocop directly in your application's dependencies. nxt_cop will include a specific version of `rubocop` that is shared across all projects.
 
 It is also possible to override styles or add styles to your application.
 
