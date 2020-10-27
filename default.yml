@@ -100,3 +100,5 @@ Security:
 Style/Semicolon:
   Exclude:
     - spec/**/*
+Rails/TimeZone:
+  Enabled: true
