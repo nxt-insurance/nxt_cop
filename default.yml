@@ -95,6 +95,8 @@ Style/TrailingCommaInArguments:
   Enabled: true
 Style/WordArray:
   Enabled: true
+Style/HashSyntax:
+  Enabled: true
 Security:
   Enabled: true
 Style/Semicolon:

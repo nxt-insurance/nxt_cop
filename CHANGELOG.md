@@ -1,3 +1,8 @@
+# v1.0.10 2020-12-01
+
+### Added
+- `Style/HashSyntax`
+
 # v1.0.9 2020-10-15
 
 ### Added
