@@ -1,3 +1,7 @@
+# v1.0.10 2020-12-29
+### Fix
+- Add `require: rubocop-rails` to `default.yml`
+
 # v1.0.10 2020-12-01
 
 ### Added
