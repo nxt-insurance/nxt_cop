@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Getsafe shared Rubocop.'
   spec.homepage      = 'https://github.com/nxt-insurance/nxt_cop'
+  spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

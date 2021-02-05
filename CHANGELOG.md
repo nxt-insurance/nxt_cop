@@ -1,7 +1,9 @@
 # v1.0.12 2020-12-29
+
 ### Update Gems
 
 # v1.0.11 2020-12-29
+
 ### Fix
 - Add `require: rubocop-rails` to `default.yml`
 
@@ -46,7 +48,7 @@ Updated Rubocop Version
 
 ### Added
 
-- Style/TrailingCommaInArguments`
+- `Style/TrailingCommaInArguments`
 
 ### Removed
 
