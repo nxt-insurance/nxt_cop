@@ -35,6 +35,8 @@ Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: no_empty_lines
 Layout/EmptyLinesAroundBlockBody:
   EnforcedStyle: no_empty_lines
+Layout/TrailingWhitespace:
+  AllowInHeredoc: false
 Lint:
   Enabled: true
 Lint/AmbiguousBlockAssociation:
