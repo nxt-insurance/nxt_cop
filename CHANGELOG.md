@@ -1,3 +1,13 @@
+# v1.0.14 2022-05-04
+
+## What's Changed
+* 🚨 [security] Upgrade rubocop: 0.92.0 → 1.25.1 (major) by @depfu in https://github.com/nxt-insurance/nxt_cop/pull/19
+* Upgrade rubocop: 1.25.1 → 1.28.2 (minor) by @depfu in https://github.com/nxt-insurance/nxt_cop/pull/26
+* Allow including repos use their own ruby version by @shalvah-gs in https://github.com/nxt-insurance/nxt_cop/pull/27
+* Update rubocop-rails: 2.13.2 → 2.14.2 (minor) by @depfu in https://github.com/nxt-insurance/nxt_cop/pull/22
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.13...v1.0.14
+
 # v1.0.12 2020-12-29
 
 ### Update Gems
