@@ -11,7 +11,6 @@ AllCops:
     - db/migrate/*
     - vendor/**/*
     - node_modules/**/*
-  TargetRubyVersion: 2.6
   DisabledByDefault: true
 Layout/DotPosition:
   EnforcedStyle: trailing
@@ -100,6 +99,7 @@ Style/WordArray:
   Enabled: true
 Style/HashSyntax:
   Enabled: true
+  EnforcedShorthandSyntax: either
 Security:
   Enabled: true
 Style/Semicolon:
