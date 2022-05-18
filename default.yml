@@ -92,7 +92,7 @@ Style/StringLiterals:
 Style/SymbolArray:
   Enabled: true
 Style/TrailingCommaInHashLiteral:
-  Enabled: true
+  Enabled: false
 Style/TrailingCommaInArguments:
   Enabled: true
 Style/WordArray:
