@@ -1,5 +1,4 @@
-# v1.0.15 2022-05-18
-
+# v1.0.16 2022-06-24
 ## What's Changed
 * Disable Layout/MultilineMethodCallIndentation ([#30](https://github.com/nxt-insurance/nxt_cop/pull/34))
 
@@ -7,6 +6,12 @@
 
 
 # v1.0.15 2022-05-18
+
+## What's Changed
+* Don't enforce trailing comma in hash literals rule ([#30](https://github.com/nxt-insurance/nxt_cop/pull/30))
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.14...v1.0.15
+
 # v1.0.14 2022-05-04
 
 ## What's Changed
