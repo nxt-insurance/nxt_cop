@@ -21,7 +21,7 @@ Layout/IndentationConsistency:
 Layout/IndentationStyle:
   Enabled: true
 Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
+  Enabled: false
 Layout/SpaceBeforeBlockBraces:
   Enabled: true
 Layout/SpaceInsideBlockBraces:
