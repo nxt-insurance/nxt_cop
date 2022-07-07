@@ -1,3 +1,11 @@
+# v1.0.16 2022-07-07
+
+## What's Changed
+* Add RSpec/Focus cop ([#38](https://github.com/nxt-insurance/nxt_cop/pull/38))
+* Configure recently added cops ([#39](https://github.com/nxt-insurance/nxt_cop/pull/39))
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.15...v1.0.16
+
 # v1.0.15 2022-05-18
 
 ## What's Changed
