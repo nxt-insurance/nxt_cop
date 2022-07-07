@@ -1,4 +1,6 @@
-require: rubocop-rails
+require:
+- rubocop-rails
+- rubocop-rspec
 AllCops:
   Exclude:
     # generated files
@@ -106,4 +108,8 @@ Style/Semicolon:
   Exclude:
     - spec/**/*
 Rails/TimeZone:
+  Enabled: true
+RSpec:
+  Enabled: false
+RSpec/Focus:
   Enabled: true
