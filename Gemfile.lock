@@ -4,6 +4,7 @@ PATH
     nxt_cop (1.0.15)
       rubocop (= 1.31.1)
       rubocop-rails (~> 2.8)
+      rubocop-rspec (~> 2.12)
 
 GEM
   remote: https://rubygems.org/
@@ -39,10 +40,12 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.18.0)
       parser (>= 3.1.1.0)
-    rubocop-rails (2.15.1)
+    rubocop-rails (2.15.2)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
+    rubocop-rspec (2.12.1)
+      rubocop (~> 1.31)
     ruby-progressbar (1.11.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)

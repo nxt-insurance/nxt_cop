@@ -1,2 +1,9 @@
 inherit_from: default.yml
-require: rubocop-rails
+require:
+- rubocop-rails
+- rubocop-rspec
+  
+RSpec:
+  Enabled: false
+RSpec/Focus:
+  Enabled: true
