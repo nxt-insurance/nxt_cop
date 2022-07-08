@@ -103,7 +103,7 @@ Style/HashSyntax:
   Enabled: true
   EnforcedShorthandSyntax: either
 Security:
-  Enabled: true
+  EnabledByDefault: true
 Style/Semicolon:
   Exclude:
     - spec/**/*
@@ -113,3 +113,58 @@ RSpec:
   Enabled: false
 RSpec/Focus:
   Enabled: true
+Lint/AmbiguousAssignment:
+  Enabled: true
+Lint/DeprecatedConstants:
+  Enabled: true
+Lint/AmbiguousRange:
+  Enabled: true
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: true
+Lint/TripleQuotes:
+  Enabled: true
+Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+Lint/NonAtomicFileOperation:
+  Enabled: true
+Lint/SymbolConversion:
+  Enabled: true
+Lint/UnmodifiedReduceAccumulator:
+  Enabled: true
+Lint/OrAssignmentToConstant:
+  Enabled: true
+Lint/RedundantDirGlobSort:
+  Enabled: true
+
+# These checks are valid, but better left to programmer's discretion, as the effects are harmless.
+Lint/DuplicateBranch:
+  Enabled: false
+Lint/DuplicateRegexpCharacterClassElement:
+  Enabled: false
+Lint/EmptyBlock:
+  Enabled: false
+Lint/EmptyClass:
+  Enabled: false
+Lint/EmptyInPattern:
+  Enabled: false
+Lint/UnexpectedBlockArity:
+  Enabled: false
+
+# These code patterns are rare/nonexistent in our code, so checking for them is a waste of time
+Lint/IncompatibleIoSelectWithFiberScheduler:
+  Enabled: false
+Lint/LambdaWithoutLiteralBlock:
+  Enabled: false
+Lint/NoReturnInBeginEndBlocks:
+  Enabled: false
+Lint/NumberedParameterAssignment:
+  Enabled: false
+Lint/RefinementImportMethods:
+  Enabled: false
+Lint/RequireRelativeSelfPath:
+  Enabled: false
+Lint/ToEnumArguments:
+  Enabled: false
+Lint/UselessRuby2Keywords:
+  Enabled: false
+
