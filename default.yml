@@ -131,6 +131,10 @@ Lint/SymbolConversion:
   Enabled: true
 Lint/UnmodifiedReduceAccumulator:
   Enabled: true
+Lint/OrAssignmentToConstant:
+  Enabled: true
+Lint/RedundantDirGlobSort:
+  Enabled: true
 
 # These checks are valid, but better left to programmer's discretion, as the effects are harmless.
 Lint/DuplicateBranch:
@@ -155,12 +159,8 @@ Lint/NoReturnInBeginEndBlocks:
   Enabled: false
 Lint/NumberedParameterAssignment:
   Enabled: false
-Lint/OrAssignmentToConstant:
-  Enabled: true
-Lint/RedundantDirGlobSort:
-  Enabled: true
 Lint/RefinementImportMethods:
-  Enabled: true
+  Enabled: false
 Lint/RequireRelativeSelfPath:
   Enabled: false
 Lint/ToEnumArguments:
