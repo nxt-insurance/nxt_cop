@@ -65,6 +65,16 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Release a new version
 
+```shell
+bundle config set gem.push_key rubygems
+```
+
+Add to `~/.gem/credentials` (create if it doesn't exist):
+
+```shell
+:rubygems: <your Rubygems API key>
+```
+
 To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
