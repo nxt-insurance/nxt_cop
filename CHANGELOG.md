@@ -1,7 +1,7 @@
 # v1.0.17 2022-08-19
 
 ## What's Changed
-* Disable the recently added  Lint/SymbolConversion cop ([#45](https://github.com/nxt-insurance/nxt_cop/pull/45))
+* Adjust severity of the recently added  Lint/SymbolConversion cop ([#45](https://github.com/nxt-insurance/nxt_cop/pull/45))
 
 **Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.15...v1.0.16
 

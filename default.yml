@@ -78,7 +78,7 @@ Lint/SelfAssignment:
 Lint/StructNewOverride:
   Enabled: true
 Lint/SymbolConversion:
-  Enabled: false
+  EnforcedStyle: consistent
 Lint/TopLevelReturnWithArgument:
   Enabled: true
 Lint/TrailingCommaInAttributeDeclaration:
