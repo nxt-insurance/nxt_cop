@@ -1,9 +1,16 @@
+# v1.0.18
+
+## What's Changed
+* Add `Rails/Date` cop ([#50](https://github.com/nxt-insurance/nxt_cop/pull/50))
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.17...v1.0.18
+
 # v1.0.17 2022-08-19
 
 ## What's Changed
 * Adjust severity of the recently added  Lint/SymbolConversion cop ([#45](https://github.com/nxt-insurance/nxt_cop/pull/45))
 
-**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.15...v1.0.16
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.16...v1.0.17
 
 # v1.0.16 2022-07-07
 

@@ -111,6 +111,8 @@ Style/Semicolon:
     - spec/**/*
 Rails/TimeZone:
   Enabled: true
+Rails/Date:
+  Enabled: true
 RSpec:
   Enabled: false
 RSpec/Focus:
