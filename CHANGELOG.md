@@ -1,3 +1,12 @@
+# v1.0.19 2023-04-04
+
+## What's Changed
+* Add `Layout/SpaceBeforeComma`
+* Add `Layout/SpaceAfterComma`
+* Add `Layout/EmptyLines` cops ([#80](https://github.com/nxt-insurance/nxt_cop/pull/80)) 
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.18...v1.0.19
+
 # v1.0.18
 
 ## What's Changed
