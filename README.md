@@ -65,6 +65,8 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Release a new version
 
+First, if you don't want to always log in with your RubyGems password, you can create an API key from the web, and then:
+
 ```shell
 bundle config set gem.push_key rubygems
 ```

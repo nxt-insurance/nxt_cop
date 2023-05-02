@@ -1,7 +1,11 @@
 require:
 - rubocop-rails
 - rubocop-rspec
+- ./lib/custom_cops/spec_never_runs.rb
+Getsafe/SpecNeverRuns:
+  Enabled: true
 AllCops:
+  SuggestExtensions: false
   Exclude:
     # generated files
     - bin/guard
@@ -106,7 +110,7 @@ Style/SymbolArray:
 Style/TrailingCommaInHashLiteral:
   Enabled: false
 Style/TrailingCommaInArguments:
-  Enabled: true
+  Enabled: false
 Style/WordArray:
   Enabled: true
 Style/HashSyntax:
@@ -162,7 +166,7 @@ Lint/EmptyInPattern:
 Lint/UnexpectedBlockArity:
   Enabled: false
 
-# These code patterns are rare/nonexistent in our code, so checking for them is a waste of time
+# These code patterns are rare/nonexistent in our code or harmless, so checking for them is unnecessary.
 Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: false
 Lint/LambdaWithoutLiteralBlock:
@@ -178,5 +182,9 @@ Lint/RequireRelativeSelfPath:
 Lint/ToEnumArguments:
   Enabled: false
 Lint/UselessRuby2Keywords:
+  Enabled: false
+Lint/DuplicateMagicComment:
+  Enabled: false
+Lint/UselessRescue:
   Enabled: false
 
