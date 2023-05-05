@@ -244,4 +244,3 @@ Lint/ToEnumArguments:
   Enabled: false
 Lint/UselessRuby2Keywords:
   Enabled: false
-  
