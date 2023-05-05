@@ -28,8 +28,6 @@ Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 Layout/MultilineArrayLineBreaks:
   Enabled: true
-Layout/MultilineAssignmentLayout:
-  EnforcedStyle: new_line
 Layout/MultilineBlockLayout:
   Enabled: true
 Layout/MultilineHashKeyLineBreaks:
