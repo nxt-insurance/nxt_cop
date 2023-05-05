@@ -4,6 +4,7 @@
 * Add multiple autocorrectable layout cops
 
 **Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.19...v1.1.0
+
 # v1.0.19 2023-04-04
 
 ## What's Changed

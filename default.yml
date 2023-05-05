@@ -242,3 +242,7 @@ Lint/ToEnumArguments:
   Enabled: false
 Lint/UselessRuby2Keywords:
   Enabled: false
+Lint/DuplicateMagicComment:
+  Enabled: false
+Lint/UselessRescue:
+  Enabled: false
