@@ -3,7 +3,6 @@ require:
 - rubocop-rspec
 AllCops:
   Exclude:
-    # generated files
     - bin/guard
     - bin/rspec
     - bin/rubocop
@@ -15,16 +14,78 @@ AllCops:
     - node_modules/**/*
   DisabledByDefault: true
 
+# A bunch of these layout cops are enabled by default,
+# but for some reason 'DisableByDefault' is set to 'true' above.
+# Removing this configuration leads to a lot of violations triggered
+# by other cops that are not auto-correctable.
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/ArrayAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: key
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/MultilineArrayLineBreaks:
+  Enabled: true
+Layout/MultilineBlockLayout:
+  Enabled: true
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: true
+Layout/MultilineHashBraceLayout:
+  Enabled: true
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+Layout/MultilineMethodCallBraceLayout:
+  EnforcedStyle: new_line
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/MultilineMethodDefinitionBraceLayout:
+  EnforcedStyle: new_line
+Layout/SpaceAroundOperators:
+  AllowForAlignment: false
+Layout/SpaceBeforeBrackets:
+  Enabled: true
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_block
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/IndentationWidth:
+  Enabled: true
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+Layout/FirstArgumentIndentation:
+  Enabled: true
+Layout/ElseAlignment:
+  Enabled: true
+Layout/FirstHashElementIndentation:
+  Enabled: true
+Layout/AssignmentIndentation:
+  Enabled: true
+Layout/CaseIndentation:
+  Enabled: true
+Layout/MultilineArrayBraceLayout:
+  Enabled: true
+Layout/BeginEndAlignment:
+  Enabled: true
+Layout/CommentIndentation:
+  Enabled: true
 Layout/DotPosition:
-  EnforcedStyle: trailing
+  EnforcedStyle: leading
 Layout/EmptyLineAfterGuardClause:
   Enabled: true
 Layout/IndentationConsistency:
   Enabled: true
-Layout/IndentationStyle:
+Layout/MultilineMethodParameterLineBreaks:
   Enabled: true
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
 Layout/SpaceBeforeBlockBraces:
   Enabled: true
 Layout/SpaceInsideBlockBraces:
@@ -179,4 +240,11 @@ Lint/ToEnumArguments:
   Enabled: false
 Lint/UselessRuby2Keywords:
   Enabled: false
-
+Lint/DuplicateMagicComment:
+  Enabled: false
+Lint/UselessRescue:
+  Enabled: false
+Lint/DuplicateMagicComment:
+  Enabled: false
+Lint/UselessRescue:
+  Enabled: false
