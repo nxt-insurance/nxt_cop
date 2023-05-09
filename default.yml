@@ -244,3 +244,7 @@ Lint/DuplicateMagicComment:
   Enabled: false
 Lint/UselessRescue:
   Enabled: false
+Lint/DuplicateMagicComment:
+  Enabled: false
+Lint/UselessRescue:
+  Enabled: false
