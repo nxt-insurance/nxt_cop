@@ -34,8 +34,6 @@ Layout/MultilineHashKeyLineBreaks:
   Enabled: true
 Layout/MultilineHashBraceLayout:
   Enabled: true
-Layout/MultilineMethodArgumentLineBreaks:
-  Enabled: true
 Layout/FirstMethodArgumentLineBreak:
   Enabled: true
 Layout/MultilineMethodCallBraceLayout:
