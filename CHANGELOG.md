@@ -1,3 +1,10 @@
+# v1.1.1 2023-05-23
+## What's Changed
+* Add `Lint/DuplicateMatchPattern`
+* Add `Layout/EmptyLineAfterMagicComment`
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.1.0...v1.1.1
+
 # v1.1.0 2023-05-05
 ## What's Changed
 * Change `DotPosition` to enforce leading dots for method invocation
