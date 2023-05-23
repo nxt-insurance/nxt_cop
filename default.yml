@@ -106,6 +106,8 @@ Layout/SpaceAfterComma:
   Enabled: true
 Layout/EmptyLines:
   Enabled: true
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
 
 Lint:
   Enabled: true
@@ -241,10 +243,8 @@ Lint/ToEnumArguments:
 Lint/UselessRuby2Keywords:
   Enabled: false
 Lint/DuplicateMagicComment:
-  Enabled: false
+  Enabled: true
 Lint/UselessRescue:
   Enabled: false
-Lint/DuplicateMagicComment:
-  Enabled: false
-Lint/UselessRescue:
-  Enabled: false
+Lint/DuplicateMatchPattern:
+  Enabled: true
