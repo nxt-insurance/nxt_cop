@@ -242,9 +242,15 @@ Lint/ToEnumArguments:
   Enabled: false
 Lint/UselessRuby2Keywords:
   Enabled: false
+
+# Since we don't have all cops enabled by default we have to add every new cop explicitly
 Lint/DuplicateMagicComment:
   Enabled: true
 Lint/UselessRescue:
   Enabled: false
 Lint/DuplicateMatchPattern:
+  Enabled: true
+Lint/MixedCaseRange:
+  Enabled: true
+Lint/RedundantRegexpQuantifiers:
   Enabled: true
