@@ -64,7 +64,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Release a new version
-
+### Setup credentials
 ```shell
 bundle config set gem.push_key rubygems
 ```
@@ -75,7 +75,16 @@ Add to `~/.gem/credentials` (create if it doesn't exist):
 :rubygems: <your Rubygems API key>
 ```
 
-To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### Release process
+- Merge all Depfu updates
+- Run `bundle install` to update dependencies
+- Run `rubocop` to see if new rules were added
+  - If yes, add them to `default.yml` to prevent "New rules" warning
+- Update the version number in `version.rb`
+- Update the `CHANGELOG.md`
+- Open the PR, merge everything to `main`
+
+Once PR is merged, switch to main and run `bundle exec rake release` which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 

@@ -1,3 +1,10 @@
+# v1.2.1 2023-08-23
+## What's Changed
+* Add `Lint/MixedCaseRange`
+* Add `Lint/RedundantRegexpQuantifiers`
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.2.0...v1.2.1
+
 # v1.2.0 2023-08-23
 ## What's Changed
 Bumped dependencies version
