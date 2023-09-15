@@ -1,0 +1,257 @@
+require:
+- rubocop-rails
+- rubocop-rspec
+#- rubocop-factory_bot
+
+AllCops:
+  Exclude:
+    - bin/guard
+    - bin/rspec
+    - bin/rubocop
+    - bin/setup
+    - config.ru
+    - db/schema.rb
+    - db/migrate/*
+    - vendor/**/*
+    - node_modules/**/*
+
+# A bunch of these layout cops are enabled by default,
+# but for some reason 'DisableByDefault' is set to 'true' above.
+# Removing this configuration leads to a lot of violations triggered
+# by other cops that are not auto-correctable.
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/ArrayAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: key
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/MultilineArrayLineBreaks:
+  Enabled: true
+Layout/MultilineBlockLayout:
+  Enabled: true
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: true
+Layout/MultilineHashBraceLayout:
+  Enabled: true
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+Layout/MultilineMethodCallBraceLayout:
+  EnforcedStyle: new_line
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/MultilineMethodDefinitionBraceLayout:
+  EnforcedStyle: new_line
+Layout/SpaceAroundOperators:
+  AllowForAlignment: false
+Layout/SpaceBeforeBrackets:
+  Enabled: true
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_block
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/IndentationWidth:
+  Enabled: true
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+Layout/FirstArgumentIndentation:
+  Enabled: true
+Layout/ElseAlignment:
+  Enabled: true
+Layout/FirstHashElementIndentation:
+  Enabled: true
+Layout/AssignmentIndentation:
+  Enabled: true
+Layout/CaseIndentation:
+  Enabled: true
+Layout/MultilineArrayBraceLayout:
+  Enabled: true
+Layout/BeginEndAlignment:
+  Enabled: true
+Layout/CommentIndentation:
+  Enabled: true
+Layout/DotPosition:
+  EnforcedStyle: leading
+Layout/EmptyLineAfterGuardClause:
+  Enabled: true
+Layout/IndentationConsistency:
+  Enabled: true
+Layout/MultilineMethodParameterLineBreaks:
+  Enabled: true
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+Layout/TrailingEmptyLines:
+  Enabled: true
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: no_empty_lines
+Layout/EmptyLinesAroundBlockBody:
+  EnforcedStyle: no_empty_lines
+Layout/TrailingWhitespace:
+  AllowInHeredoc: false
+Layout/SpaceBeforeComma:
+  Enabled: true
+Layout/SpaceAfterComma:
+  Enabled: true
+Layout/EmptyLines:
+  Enabled: true
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+
+Lint:
+  Enabled: true
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: true
+Lint/ConstantDefinitionInBlock:
+  Enabled: true
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+Lint/DuplicateElsifCondition:
+  Enabled: true
+Lint/DuplicateRequire:
+  Enabled: true
+Lint/DuplicateRescueException:
+  Enabled: true
+Lint/EmptyConditionalBody:
+  Enabled: true
+Lint/EmptyFile:
+  Enabled: true
+Lint/FloatComparison:
+  Enabled: true
+Lint/IdentityComparison:
+  Enabled: true
+Lint/Loop:
+  Enabled: false
+Lint/MissingSuper:
+  Enabled: false
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+Lint/OutOfRangeRegexpRef:
+  Enabled: true
+Lint/RaiseException:
+  Enabled: true
+Lint/SelfAssignment:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+Lint/SymbolConversion:
+  EnforcedStyle: consistent
+Lint/TopLevelReturnWithArgument:
+  Enabled: true
+Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+Lint/UnreachableLoop:
+  Enabled: true
+Lint/UselessMethodDefinition:
+  Enabled: true
+Lint/UselessTimes:
+  Enabled: true
+Style/MutableConstant:
+  Enabled: true
+Style/StringLiterals:
+  Enabled: true
+Style/SymbolArray:
+  Enabled: true
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  Enabled: true
+Style/WordArray:
+  Enabled: true
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: either
+Security:
+  EnabledByDefault: true
+Style/Semicolon:
+  Exclude:
+    - spec/**/*
+Rails/TimeZone:
+  Enabled: true
+Rails/Date:
+  Enabled: true
+RSpec:
+  Enabled: false
+RSpec/Focus:
+  Enabled: true
+Lint/AmbiguousAssignment:
+  Enabled: true
+Lint/DeprecatedConstants:
+  Enabled: true
+Lint/AmbiguousRange:
+  Enabled: true
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: true
+Lint/TripleQuotes:
+  Enabled: true
+Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+Lint/NonAtomicFileOperation:
+  Enabled: true
+Lint/UnmodifiedReduceAccumulator:
+  Enabled: true
+Lint/OrAssignmentToConstant:
+  Enabled: true
+Lint/RedundantDirGlobSort:
+  Enabled: true
+Lint/RequireRangeParentheses:
+  Enabled: true
+
+# These checks are valid, but better left to programmer's discretion, as the effects of such code are harmless.
+Lint/DuplicateBranch:
+  Enabled: false
+Lint/DuplicateRegexpCharacterClassElement:
+  Enabled: false
+Lint/EmptyBlock:
+  Enabled: false
+Lint/EmptyClass:
+  Enabled: false
+Lint/EmptyInPattern:
+  Enabled: false
+Lint/UnexpectedBlockArity:
+  Enabled: false
+
+# These code patterns are rare/nonexistent in our code, so checking for them is a waste of time
+Lint/IncompatibleIoSelectWithFiberScheduler:
+  Enabled: false
+Lint/LambdaWithoutLiteralBlock:
+  Enabled: false
+Lint/NoReturnInBeginEndBlocks:
+  Enabled: false
+Lint/NumberedParameterAssignment:
+  Enabled: false
+Lint/RefinementImportMethods:
+  Enabled: false
+Lint/RequireRelativeSelfPath:
+  Enabled: false
+Lint/ToEnumArguments:
+  Enabled: false
+Lint/UselessRuby2Keywords:
+  Enabled: false
+
+# Since we don't have all cops enabled by default we have to add every new cop explicitly
+Lint/DuplicateMagicComment:
+  Enabled: true
+Lint/UselessRescue:
+  Enabled: false
+Lint/DuplicateMatchPattern:
+  Enabled: true
+Lint/MixedCaseRange:
+  Enabled: true
+Lint/RedundantRegexpQuantifiers:
+  Enabled: true

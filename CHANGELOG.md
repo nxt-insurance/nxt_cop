@@ -1,3 +1,7 @@
+# v2.0.0 2023-09-15
+## What's Changed
+* Add `strict.yml` with default cops enabled
+
 # v1.2.1 2023-08-23
 ## What's Changed
 * Add `Lint/MixedCaseRange`
