@@ -1,6 +1,12 @@
 require:
 - rubocop-rails
 - rubocop-rspec
+
+inherit_mode:
+  merge:
+    - Exclude
+    - Include
+
 AllCops:
   Exclude:
     - bin/guard
