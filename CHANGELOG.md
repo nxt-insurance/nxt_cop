@@ -1,3 +1,9 @@
+# v1.3.1 2023-10-10
+## What's Changed
+* Bumped dependencies version
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.3.0...v1.3.1
+
 # v1.3.0 2023-09-22
 ## What's Changed
 * `inherit_mode` was added to `default.yml`
