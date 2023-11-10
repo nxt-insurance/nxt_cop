@@ -81,6 +81,7 @@ Add to `~/.gem/credentials` (create if it doesn't exist):
 - Run `rubocop` to see if new rules were added
   - If yes, add them to `default.yml` to prevent "New rules" warning
 - Update the version number in `version.rb`
+- Run `bundle install` again to update the version in Gemfile.lock
 - Update the `CHANGELOG.md`
 - Open the PR, merge everything to `main`
 
