@@ -1,3 +1,9 @@
+# v2.0.0 2023-11-28
+## What's Changed
+* Enabled all cops by default
+
+**Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.3.1...v2.0.0
+
 # v1.3.1 2023-10-10
 ## What's Changed
 * Bumped dependencies version

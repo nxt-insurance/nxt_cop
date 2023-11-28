@@ -18,7 +18,8 @@ AllCops:
     - db/migrate/*
     - vendor/**/*
     - node_modules/**/*
-  DisabledByDefault: true
+  DisabledByDefault: false
+  NewCops: disable # to avoid warnings. TODO: remove this setting and add new cops from the warning.
 
 # A bunch of these layout cops are enabled by default,
 # but for some reason 'DisableByDefault' is set to 'true' above.
@@ -260,3 +261,364 @@ Lint/MixedCaseRange:
   Enabled: true
 Lint/RedundantRegexpQuantifiers:
   Enabled: true
+
+# This is default cops we want to keep disabled:
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Layout/LineLength:
+  Enabled: false
+Style/ArgumentsForwarding:
+  Enabled: false
+Naming/BlockForwarding:
+  Enabled: false
+Rails/FreezeTime:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Naming/VariableNumber:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Style/SafeNavigation:
+  Enabled: false
+Rails/Output:
+  Enabled: false
+Style/Next: # this one looks dangerous
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false
+Bundler/DuplicatedGroup:
+  Enabled: false
+Rails/HttpStatus:
+  Enabled: false
+Rails/SkipsModelValidations:
+  Enabled: false
+Style/InfiniteLoop:
+  Enabled: false
+Style/StderrPuts:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Style/RegexpLiteral:
+  Enabled: false
+Rails/Delegate:
+  Enabled: false
+Style/RaiseArgs:
+  Enabled: false
+Rails/HasManyOrHasOneDependent: # Nice to have but challenging to fix
+  Enabled: false
+Rails/InverseOf:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/PredicateName:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+Style/RedundantSort: # dangerous since autofix breaks the code
+  Enabled: false
+Style/SymbolProc:
+  Enabled: false
+Rails/ApplicationController:
+  Enabled: false
+Rails/ApplicationRecord:
+  Enabled: false
+Style/ExplicitBlockArgument:
+  Enabled: false
+Rails/DynamicFindBy:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Rails/IndexWith:
+  Enabled: false
+Style/FormatString:
+  Enabled: false
+Rails/Blank:
+  Enabled: false
+Rails/Present:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/Proc:
+  Enabled: false
+Style/ExponentialNotation:
+  Enabled: false
+Style/PreferredHashMethods: # can be changed via vote
+  Enabled: false
+Rails/Presence:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Style/RedundantConditional:
+  Enabled: false
+Style/TrailingUnderscoreVariable:
+  Enabled: false
+Style/ParenthesesAroundCondition:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/RedundantAssignment:
+  Enabled: false
+Style/CaseLikeIf:
+  Enabled: false
+Style/RedundantBegin:
+  Enabled: false
+Rails/FilePath:
+  Enabled: false
+Style/Alias:
+  Enabled: false
+Style/SingleArgumentDig:
+  Enabled: false
+Style/RescueModifier: # because it's heavily used in application service
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Naming/BinaryOperatorParameterName:
+  Enabled: false
+Style/SignalException:
+  Enabled: false
+Style/TrivialAccessors:
+  Enabled: false
+Rails/HasAndBelongsToMany:
+  Enabled: false
+Style/AccessModifierDeclarations:
+  Enabled: false
+Rails/ReadWriteAttribute:
+  Enabled: false
+Rails/RedundantReceiverInWithOptions:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false
+Rails/IndexBy:
+  Enabled: false
+Rails/Pick:
+  Enabled: false
+Style/CombinableLoops:  # hard to autocorrect properly
+  Enabled: false
+FactoryBot/CreateList:
+  Enabled: false
+Rails/ReflectionClassName:
+  Enabled: false
+Style/RedundantSelf:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Style/StringConcatenation:  # heavily used in insurance service
+  Enabled: false
+Style/InverseMethods:
+  Enabled: false
+Style/RedundantInterpolation:
+  Enabled: false
+Style/ZeroLengthPredicate:
+  Enabled: false
+
+# 🤔 Should we enable these cops or not? They look useful but require alignment within the team
+Style/OpenStructUse:
+  Enabled: false
+Style/RedundantConstantBase: # new in 1.40
+  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+Style/ConditionalAssignment:
+  Enabled: false
+Style/BlockDelimiters:
+  Enabled: false
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+FactoryBot/FactoryClassName:
+  Enabled: false
+Style/NumericLiteralPrefix:
+  Enabled: false
+Style/OptionalBooleanParameter:
+  Enabled: false
+Style/IdenticalConditionalBranches: # Is it safe to auto-fix?
+  Enabled: false
+Naming/RescuedExceptionsVariableName: # Would be nice to have, but should align on the name first
+  Enabled: false
+
+Naming/MethodParameterName: # should enable but we have to manually fix this
+  Enabled: false
+Rails/UniqueValidationWithoutIndex: # definitely enable!!!
+  Enabled: false
+Rails/Validation: # discuss with the team
+  Enabled: false
+Rails/LexicallyScopedActionFilter:  # enable and manually disable offences
+  Enabled: false
+Security/Open:
+  Enabled: false
+Naming/FileName:
+  Enabled: false
+Style/EmptyElse:
+  Enabled: false
+Style/MixinUsage: # Enable and then manually disable offenses?
+  Enabled: false
+
+
+
+# ✅ Enabled in 2.0 version (activated by "enable all rules by default')
+# Let's keep commented list here for visibility for a while
+#
+#Layout/SpaceInsideParens:
+#  Enabled: false
+#Layout/SpaceBeforeFirstArg:
+#  Enabled: false
+#Layout/ExtraSpacing:
+#  Enabled: false
+#Layout/SpaceAfterColon:
+#  Enabled: false
+#Rails/PluralizationGrammar:
+#  Enabled: false
+#Layout/SpaceAroundMethodCallOperator:
+#  Enabled: false
+#Style/RedundantFreeze:
+#  Enabled: false
+#Layout/SpaceInLambdaLiteral:
+#  Enabled: false
+#Layout/LeadingCommentSpace:
+#  Enabled: false
+#Layout/DefEndAlignment:
+#  Enabled: false
+#Style/RedundantRegexpEscape:
+#  Enabled: false
+#Layout/HeredocIndentation:
+#  Enabled: false
+#Layout/ClosingHeredocIndentation:
+#  Enabled: false
+#Layout/LeadingEmptyLines:
+#  Enabled: false
+#Layout/EmptyLinesAroundAccessModifier:
+#  Enabled: false
+#Style/NegatedIf:
+#  Enabled: false
+#Style/CommentAnnotation:
+#  Enabled: false
+#Layout/MultilineOperationIndentation:
+#  Enabled: false
+#Style/ExpandPathArguments:
+#  Enabled: false
+#Layout/EmptyLinesAroundMethodBody:
+#  Enabled: false
+#Style/RedundantReturn:
+#  Enabled: false
+#Style/GlobalStdStream:
+#  Enabled: false
+#Style/FloatDivision:
+#  Enabled: false
+#Style/RescueStandardError:
+#  Enabled: false
+#Style/NilComparison:
+#  Enabled: false
+#Style/RedundantFetchBlock:
+#  Enabled: false
+#Style/Encoding:
+#  Enabled: false
+#Style/EmptyLiteral:
+#  Enabled: false
+#Layout/SpaceInsideReferenceBrackets:
+#  Enabled: false
+#Style/EmptyLambdaParameter:
+#  Enabled: false
+#Style/TernaryParentheses:
+#  Enabled: false
+#Naming/MethodName:
+#  Enabled: false
+#Style/SlicingWithRange:
+#  Enabled: false
+#Style/EmptyCaseCondition:
+#  Enabled: false
+#Style/SoleNestedConditional:
+#  Enabled: false
+#Rails/FindEach:
+#  Enabled: false
+#Style/RedundantFileExtensionInRequire:
+#  Enabled: false
+#Layout/SpaceInsideArrayLiteralBrackets:
+#  Enabled: false
+#Style/HashAsLastArrayItem:
+#  Enabled: false
+#Lint/RedundantCopDisableDirective:
+#  Enabled: false
+#Layout/SpaceAroundKeyword:
+#  Enabled: false
+#Style/KeywordParametersOrder:
+#  Enabled: false
+#Style/BlockComments:
+#  Enabled: false
+#Style/AndOr:
+#  Enabled: false
+#Style/EachWithObject:
+#  Enabled: false
+#Layout/SpaceAroundBlockParameters:
+#  Enabled: false
+#Style/MultilineTernaryOperator:
+#  Enabled: false
+#Style/RedundantParentheses:
+#  Enabled: false
+#Security/JSONLoad:
+#  Enabled: false
+#Style/MethodCallWithoutArgsParentheses:
+#  Enabled: false
+#Style/CommentedKeyword:
+#  Enabled: false
+#Style/MultilineIfModifier:
+#  Enabled: false
+#Style/IfInsideElse:
+#  Enabled: false
+#Style/AccessorGrouping:
+#  Enabled: false
+#Layout/BlockEndNewline:
+#  Enabled: false
+#Rails/RedundantForeignKey:
+#  Enabled: false
+#Style/UnlessElse:
+#  Enabled: false
+#Layout/EmptyLinesAroundModuleBody:
+#  Enabled: false
+#Rails/RakeEnvironment:
+#  Enabled: false
+#Layout/EmptyLinesAroundArguments:
+#  Enabled: false
+#Style/EachForSimpleLoop:
+#  Enabled: false
+#Style/ClassCheck:
+#  Enabled: false
+#Style/NestedParenthesizedCalls:
+#  Enabled: false
+#Style/LineEndConcatenation:
+#  Enabled: false
+#Style/ParallelAssignment:
+#  Enabled: false
+#Layout/EmptyLinesAroundExceptionHandlingKeywords:
+#  Enabled: false
+#Layout/SpaceAroundEqualsInParameterDefault:
+#  Enabled: false
+#Style/YodaCondition:
+#  Enabled: false
+#Layout/SpaceInsideStringInterpolation:
+#  Enabled: false
+#Style/EmptyMethod:
+#  Enabled: false
+#Layout/EmptyLineBetweenDefs:
+#  Enabled: false
+#Naming/ConstantName:
+#  Enabled: false
+#Rails/RelativeDateConstant:
+#  Enabled: false
