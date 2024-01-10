@@ -429,6 +429,34 @@ Style/RedundantInterpolation:
   Enabled: false
 Style/ZeroLengthPredicate:
   Enabled: false
+Style/MultilineTernaryOperator:
+  Enabled: false
+Style/RedundantReturn:
+  Enabled: false
+Style/ClassCheck:
+  Enabled: false
+Style/LineEndConcatenation:
+  Enabled: false
+Style/RedundantFetchBlock:
+  Enabled: false
+Style/FloatDivision:
+  Enabled: false
+Layout/MultilineOperationIndentation:
+  Enabled: false
+Style/SoleNestedConditional:
+  Enabled: false
+Rails/FindEach:
+  Enabled: false
+Style/RedundantParentheses:
+  Enabled: false
+Style/IfInsideElse:
+  Enabled: false
+Style/EmptyCaseCondition:
+  Enabled: false
+Style/TernaryParentheses:
+  EnforcedStyle: require_parentheses_when_complex
+Style/HashLikeCase:
+  Enabled: false
 
 # 🤔 Should we enable these cops or not? They look useful but require alignment within the team
 Style/OpenStructUse:
