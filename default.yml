@@ -429,6 +429,12 @@ Style/RedundantInterpolation:
   Enabled: false
 Style/ZeroLengthPredicate:
   Enabled: false
+Style/NegatedIf: # sometimes "if !var" just reads better
+  Enabled: false
+Style/NilComparison: # we don't have a good reason to enforce this
+  Enabled: false
+Style/GlobalStdStream: # autocorrection is unsafe because STDOUT and $stdout may point to different objects
+  Enabled: false
 Style/MultilineTernaryOperator:
   Enabled: false
 Style/RedundantReturn:
