@@ -1,3 +1,9 @@
+# v2.0.2 2024-01-10
+## What's Changed
+* Disable more cops depending on the code style in our backend-services
+
+* **Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v2.0.1...v2.0.2
+
 # v2.0.1 2024-01-10
 ## What's Changed
 * Disable more cops depending on the code style in our backend-services
