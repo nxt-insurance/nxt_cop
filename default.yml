@@ -1,11 +1,16 @@
 require:
 - rubocop-rails
 - rubocop-rspec
+- ./custom_cops/rails/use_of_rails_logger.rb
+- ./custom_cops/rails/missing_logger_include.rb
 
 inherit_mode:
   merge:
     - Exclude
     - Include
+
+Rails/MissingLoggerInclude:
+  SafeAutoCorrect: false
 
 AllCops:
   Exclude:
