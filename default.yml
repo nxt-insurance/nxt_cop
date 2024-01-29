@@ -9,7 +9,10 @@ inherit_mode:
     - Exclude
     - Include
 
+Rails/UseOfRailsLogger:
+  Description: "Custom Getsafe cop to ensure the correct logger is used"
 Rails/MissingLoggerInclude:
+  Description: "Custom Getsafe cop to find missing `include` statements when using our custom logger"
   SafeAutoCorrect: false
 
 AllCops:
