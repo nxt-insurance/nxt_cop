@@ -1,3 +1,7 @@
+# v2.1.0 2024-01-26
+## What's Changed
+- Add cops for Rails + NxtCore logger functionality
+
 # v2.0.2 2024-01-10
 ## What's Changed
 * Disable more cops depending on the code style in our backend-services

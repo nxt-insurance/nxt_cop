@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nxt_cop (2.0.2)
+    nxt_cop (2.1.0)
       rubocop (~> 1.60.0)
       rubocop-rails (~> 2.8)
       rubocop-rspec (~> 2.12)
@@ -33,7 +33,7 @@ GEM
     minitest (5.21.2)
     mutex_m (0.2.0)
     parallel (1.24.0)
-    parser (3.3.0.4)
+    parser (3.3.0.5)
       ast (~> 2.4.1)
       racc
     racc (1.7.3)
@@ -42,7 +42,7 @@ GEM
     rake (13.1.0)
     regexp_parser (2.9.0)
     rexml (3.2.6)
-    rubocop (1.60.1)
+    rubocop (1.60.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
