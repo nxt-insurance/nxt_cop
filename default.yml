@@ -1,4 +1,5 @@
 require:
+- rubocop-factory_bot
 - rubocop-rails
 - rubocop-rspec
 - ./custom_cops/nxt_core/rails/use_of_rails_logger.rb

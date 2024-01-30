@@ -1,3 +1,7 @@
+# v2.2.0 2024-01-30
+## What's Changed
+- Add rubocop-factory_bot
+
 # v2.1.0 2024-01-26
 ## What's Changed
 - Add cops for Rails + NxtCore logger functionality
