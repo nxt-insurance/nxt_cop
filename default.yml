@@ -1,4 +1,5 @@
 require:
+- rubocop-factory_bot
 - rubocop-rails
 - rubocop-rspec
 - ./custom_cops/nxt_core/rails/use_of_rails_logger.rb
@@ -29,25 +30,16 @@ AllCops:
   DisabledByDefault: false
   NewCops: disable # to avoid warnings. TODO: remove this setting and add new cops from the warning.
 
-# A bunch of these layout cops are enabled by default,
-# but for some reason 'DisableByDefault' is set to 'true' above.
-# Removing this configuration leads to a lot of violations triggered
-# by other cops that are not auto-correctable.
+
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 Layout/ArrayAlignment:
   EnforcedStyle: with_fixed_indentation
-Layout/HashAlignment:
-  EnforcedHashRocketStyle: key
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 Layout/MultilineArrayLineBreaks:
   Enabled: true
-Layout/MultilineBlockLayout:
-  Enabled: true
 Layout/MultilineHashKeyLineBreaks:
-  Enabled: true
-Layout/MultilineHashBraceLayout:
   Enabled: true
 Layout/FirstMethodArgumentLineBreak:
   Enabled: true
@@ -73,55 +65,7 @@ Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 Layout/FirstArrayElementLineBreak:
   Enabled: true
-Layout/IndentationWidth:
-  Enabled: true
-Layout/ClosingParenthesisIndentation:
-  Enabled: true
-Layout/FirstArgumentIndentation:
-  Enabled: true
-Layout/ElseAlignment:
-  Enabled: true
-Layout/FirstHashElementIndentation:
-  Enabled: true
-Layout/AssignmentIndentation:
-  Enabled: true
-Layout/CaseIndentation:
-  Enabled: true
-Layout/MultilineArrayBraceLayout:
-  Enabled: true
-Layout/BeginEndAlignment:
-  Enabled: true
-Layout/CommentIndentation:
-  Enabled: true
-Layout/DotPosition:
-  EnforcedStyle: leading
-Layout/EmptyLineAfterGuardClause:
-  Enabled: true
-Layout/IndentationConsistency:
-  Enabled: true
 Layout/MultilineMethodParameterLineBreaks:
-  Enabled: true
-Layout/SpaceBeforeBlockBraces:
-  Enabled: true
-Layout/SpaceInsideBlockBraces:
-  Enabled: true
-Layout/SpaceInsideHashLiteralBraces:
-  Enabled: true
-Layout/TrailingEmptyLines:
-  Enabled: true
-Layout/EmptyLinesAroundClassBody:
-  EnforcedStyle: no_empty_lines
-Layout/EmptyLinesAroundBlockBody:
-  EnforcedStyle: no_empty_lines
-Layout/TrailingWhitespace:
-  AllowInHeredoc: false
-Layout/SpaceBeforeComma:
-  Enabled: true
-Layout/SpaceAfterComma:
-  Enabled: true
-Layout/EmptyLines:
-  Enabled: true
-Layout/EmptyLineAfterMagicComment:
   Enabled: true
 
 Lint:
@@ -129,64 +73,14 @@ Lint:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
-Lint/BinaryOperatorWithIdenticalOperands:
-  Enabled: true
-Lint/ConstantDefinitionInBlock:
-  Enabled: true
-Lint/DeprecatedOpenSSLConstant:
-  Enabled: true
-Lint/DuplicateElsifCondition:
-  Enabled: true
-Lint/DuplicateRequire:
-  Enabled: true
-Lint/DuplicateRescueException:
-  Enabled: true
-Lint/EmptyConditionalBody:
-  Enabled: true
-Lint/EmptyFile:
-  Enabled: true
-Lint/FloatComparison:
-  Enabled: true
-Lint/IdentityComparison:
-  Enabled: true
 Lint/Loop:
   Enabled: false
 Lint/MissingSuper:
   Enabled: false
-Lint/MixedRegexpCaptureTypes:
-  Enabled: true
-Lint/OutOfRangeRegexpRef:
-  Enabled: true
-Lint/RaiseException:
-  Enabled: true
-Lint/SelfAssignment:
-  Enabled: true
-Lint/StructNewOverride:
-  Enabled: true
 Lint/SymbolConversion:
   EnforcedStyle: consistent
-Lint/TopLevelReturnWithArgument:
-  Enabled: true
-Lint/TrailingCommaInAttributeDeclaration:
-  Enabled: true
-Lint/UnreachableLoop:
-  Enabled: true
-Lint/UselessMethodDefinition:
-  Enabled: true
-Lint/UselessTimes:
-  Enabled: true
-Style/MutableConstant:
-  Enabled: true
-Style/StringLiterals:
-  Enabled: true
-Style/SymbolArray:
-  Enabled: true
 Style/TrailingCommaInHashLiteral:
   Enabled: false
-Style/TrailingCommaInArguments:
-  Enabled: true
-Style/WordArray:
-  Enabled: true
 Style/HashSyntax:
   Enabled: true
   EnforcedShorthandSyntax: either
@@ -245,7 +139,7 @@ Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: false
 Lint/LambdaWithoutLiteralBlock:
   Enabled: false
-Lint/NoReturnInBeginEndBlocks:
+Lint/NoReturnInBeginEndBlocks:  # ❌ ENABLE THIS!
   Enabled: false
 Lint/NumberedParameterAssignment:
   Enabled: false
@@ -512,155 +406,3 @@ Style/EmptyElse:
   Enabled: false
 Style/MixinUsage: # Enable and then manually disable offenses?
   Enabled: false
-
-
-
-# ✅ Enabled in 2.0 version (activated by "enable all rules by default')
-# Let's keep commented list here for visibility for a while
-#
-#Layout/SpaceInsideParens:
-#  Enabled: false
-#Layout/SpaceBeforeFirstArg:
-#  Enabled: false
-#Layout/ExtraSpacing:
-#  Enabled: false
-#Layout/SpaceAfterColon:
-#  Enabled: false
-#Rails/PluralizationGrammar:
-#  Enabled: false
-#Layout/SpaceAroundMethodCallOperator:
-#  Enabled: false
-#Style/RedundantFreeze:
-#  Enabled: false
-#Layout/SpaceInLambdaLiteral:
-#  Enabled: false
-#Layout/LeadingCommentSpace:
-#  Enabled: false
-#Layout/DefEndAlignment:
-#  Enabled: false
-#Style/RedundantRegexpEscape:
-#  Enabled: false
-#Layout/HeredocIndentation:
-#  Enabled: false
-#Layout/ClosingHeredocIndentation:
-#  Enabled: false
-#Layout/LeadingEmptyLines:
-#  Enabled: false
-#Layout/EmptyLinesAroundAccessModifier:
-#  Enabled: false
-#Style/NegatedIf:
-#  Enabled: false
-#Style/CommentAnnotation:
-#  Enabled: false
-#Layout/MultilineOperationIndentation:
-#  Enabled: false
-#Style/ExpandPathArguments:
-#  Enabled: false
-#Layout/EmptyLinesAroundMethodBody:
-#  Enabled: false
-#Style/RedundantReturn:
-#  Enabled: false
-#Style/GlobalStdStream:
-#  Enabled: false
-#Style/FloatDivision:
-#  Enabled: false
-#Style/RescueStandardError:
-#  Enabled: false
-#Style/NilComparison:
-#  Enabled: false
-#Style/RedundantFetchBlock:
-#  Enabled: false
-#Style/Encoding:
-#  Enabled: false
-#Style/EmptyLiteral:
-#  Enabled: false
-#Layout/SpaceInsideReferenceBrackets:
-#  Enabled: false
-#Style/EmptyLambdaParameter:
-#  Enabled: false
-#Style/TernaryParentheses:
-#  Enabled: false
-#Naming/MethodName:
-#  Enabled: false
-#Style/SlicingWithRange:
-#  Enabled: false
-#Style/EmptyCaseCondition:
-#  Enabled: false
-#Style/SoleNestedConditional:
-#  Enabled: false
-#Rails/FindEach:
-#  Enabled: false
-#Style/RedundantFileExtensionInRequire:
-#  Enabled: false
-#Layout/SpaceInsideArrayLiteralBrackets:
-#  Enabled: false
-#Style/HashAsLastArrayItem:
-#  Enabled: false
-#Lint/RedundantCopDisableDirective:
-#  Enabled: false
-#Layout/SpaceAroundKeyword:
-#  Enabled: false
-#Style/KeywordParametersOrder:
-#  Enabled: false
-#Style/BlockComments:
-#  Enabled: false
-#Style/AndOr:
-#  Enabled: false
-#Style/EachWithObject:
-#  Enabled: false
-#Layout/SpaceAroundBlockParameters:
-#  Enabled: false
-#Style/MultilineTernaryOperator:
-#  Enabled: false
-#Style/RedundantParentheses:
-#  Enabled: false
-#Security/JSONLoad:
-#  Enabled: false
-#Style/MethodCallWithoutArgsParentheses:
-#  Enabled: false
-#Style/CommentedKeyword:
-#  Enabled: false
-#Style/MultilineIfModifier:
-#  Enabled: false
-#Style/IfInsideElse:
-#  Enabled: false
-#Style/AccessorGrouping:
-#  Enabled: false
-#Layout/BlockEndNewline:
-#  Enabled: false
-#Rails/RedundantForeignKey:
-#  Enabled: false
-#Style/UnlessElse:
-#  Enabled: false
-#Layout/EmptyLinesAroundModuleBody:
-#  Enabled: false
-#Rails/RakeEnvironment:
-#  Enabled: false
-#Layout/EmptyLinesAroundArguments:
-#  Enabled: false
-#Style/EachForSimpleLoop:
-#  Enabled: false
-#Style/ClassCheck:
-#  Enabled: false
-#Style/NestedParenthesizedCalls:
-#  Enabled: false
-#Style/LineEndConcatenation:
-#  Enabled: false
-#Style/ParallelAssignment:
-#  Enabled: false
-#Layout/EmptyLinesAroundExceptionHandlingKeywords:
-#  Enabled: false
-#Layout/SpaceAroundEqualsInParameterDefault:
-#  Enabled: false
-#Style/YodaCondition:
-#  Enabled: false
-#Layout/SpaceInsideStringInterpolation:
-#  Enabled: false
-#Style/EmptyMethod:
-#  Enabled: false
-#Layout/EmptyLineBetweenDefs:
-#  Enabled: false
-#Naming/ConstantName:
-#  Enabled: false
-#Rails/RelativeDateConstant:
-#  Enabled: false

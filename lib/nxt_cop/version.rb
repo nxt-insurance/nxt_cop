@@ -1,3 +1,3 @@
 module NxtCop
-  VERSION = '2.1.0'.freeze
+  VERSION = '2.3.0'.freeze
 end
