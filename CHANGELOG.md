@@ -1,3 +1,8 @@
+# v2.3.1 2024-02-
+## What's Changed
+- Fix false positives in custom logger cop
+- Add tests for custom cops
+
 # v2.3.0 2024-02-09
 ## What's Changed
 - Tree shake the config (no rules change)
