@@ -4,9 +4,7 @@ require_relative '../../custom_cops/nxt_core/rails/missing_logger_include.rb'
 
 RSpec.describe CustomCops::NxtCore::Rails::MissingLoggerInclude do
   let(:config) do
-    RuboCop::Config.new({
-      described_class.badge.to_s => { 'Enabled' => true }
-    })
+    RuboCop::Config.new({ described_class.badge.to_s => { 'Enabled' => true } })
   end
   let(:cop) { described_class.new(config) }
   let(:commissioner) { RuboCop::Cop::Commissioner.new([cop], [], {raise_error: true, autocorrect: true}) }
@@ -30,13 +28,9 @@ RSpec.describe CustomCops::NxtCore::Rails::MissingLoggerInclude do
         RUBY
       end
 
-      let(:corrected) do
-        # No correction if the class does not have existing includes
-      end
-
       it 'registers an offence' do
         expect(offenses.first.message).to eq(described_class::MSG)
-        expect(corrector).to eq(nil)
+        expect(corrector).to eq(nil) # No correction if the class does not have existing includes
       end
     end
 
