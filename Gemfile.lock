@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nxt_cop (2.3.1)
+    nxt_cop (2.4.0)
       rubocop (~> 1.60.0)
       rubocop-rails (~> 2.8)
       rubocop-rspec (~> 2.12)

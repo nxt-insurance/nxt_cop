@@ -1,7 +1,7 @@
-# v2.3.1 2024-02-
+# v2.4.0 2024-02-19
 ## What's Changed
-- Fix false positives in custom logger cop
 - Add tests for custom cops
+- Removed `Rails/MissingLoggerInclude` due to maintenance burden
 
 # v2.3.0 2024-02-09
 ## What's Changed
