@@ -1,3 +1,8 @@
+# v2.4.0 2024-02-19
+## What's Changed
+- Add tests for custom cops
+- Removed `Rails/MissingLoggerInclude` due to maintenance burden
+
 # v2.3.0 2024-02-09
 ## What's Changed
 - Tree shake the config (no rules change)
