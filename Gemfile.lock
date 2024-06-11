@@ -3,8 +3,11 @@ PATH
   specs:
     nxt_cop (2.4.0)
       rubocop (~> 1.60)
+      rubocop-capybara (~> 2.21)
+      rubocop-factory_bot (~> 2.26)
       rubocop-rails (~> 2.8)
-      rubocop-rspec (~> 2.12)
+      rubocop-rspec (~> 3.0)
+      rubocop-rspec_rails (~> 2.30)
 
 GEM
   remote: https://rubygems.org/
@@ -80,13 +83,11 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    rubocop-rspec (2.31.0)
-      rubocop (~> 1.40)
-      rubocop-capybara (~> 2.17)
-      rubocop-factory_bot (~> 2.22)
-      rubocop-rspec_rails (~> 2.28)
-    rubocop-rspec_rails (2.29.1)
+    rubocop-rspec (3.0.1)
       rubocop (~> 1.61)
+    rubocop-rspec_rails (2.30.0)
+      rubocop (~> 1.61)
+      rubocop-rspec (~> 3, >= 3.0.1)
     ruby-progressbar (1.13.0)
     strscan (3.1.0)
     tzinfo (2.0.6)
