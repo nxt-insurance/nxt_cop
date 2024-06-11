@@ -1,3 +1,9 @@
+# v2.5.0 2024-06-11
+## What's Changed
+- Relaxes the rubocop version to not pin the patch
+- Updates the ruby version to 3.3.2
+- Updates dependencies
+
 # v2.4.0 2024-02-19
 ## What's Changed
 - Add tests for custom cops
