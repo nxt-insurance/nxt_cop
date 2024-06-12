@@ -1,15 +1,17 @@
 # frozen_string_literal: true
 
-require_relative '../../custom_cops/nxt_core/rails/use_of_rails_logger.rb'
+require_relative '../../custom_cops/nxt_core/rails/use_of_rails_logger'
 
 RSpec.describe CustomCops::NxtCore::Rails::UseOfRailsLogger do
   let(:config) do
-    RuboCop::Config.new({
-      described_class.badge.to_s => { 'Enabled' => true, 'AutoCorrect' => true, 'SafeAutoCorrect' => true }
-    })
+    RuboCop::Config.new(
+      {
+        described_class.badge.to_s => { 'Enabled' => true, 'AutoCorrect' => true, 'SafeAutoCorrect' => true }
+      }
+    )
   end
   let(:cop) { described_class.new(config) }
-  let(:commissioner) { RuboCop::Cop::Commissioner.new([cop], [], {raise_error: true, autocorrect: true}) }
+  let(:commissioner) { RuboCop::Cop::Commissioner.new([cop], [], { raise_error: true, autocorrect: true }) }
 
   subject(:report) { commissioner.investigate(cop.parse(source)) }
 
