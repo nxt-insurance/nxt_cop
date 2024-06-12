@@ -1,3 +1,7 @@
+# v2.5.1 2024-06-12
+## What's Changed
+- Adds rubocop-rspec_rails to `.default.yml` to restore previous functionality
+
 # v2.5.0 2024-06-11
 ## What's Changed
 - Relaxes the rubocop version to not pin the patch

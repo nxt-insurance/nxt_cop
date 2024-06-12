@@ -2,6 +2,7 @@ require:
 - rubocop-factory_bot
 - rubocop-rails
 - rubocop-rspec
+- rubocop-rspec_rails
 - ./custom_cops/nxt_core/rails/use_of_rails_logger.rb
 
 inherit_mode:
