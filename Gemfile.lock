@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nxt_cop (2.5.1)
+    nxt_cop (2.6.0)
       rubocop (~> 1.60)
       rubocop-capybara (~> 2.21)
       rubocop-factory_bot (~> 2.26)

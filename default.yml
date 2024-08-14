@@ -116,6 +116,8 @@ Lint/RedundantDirGlobSort:
   Enabled: true
 Lint/RequireRangeParentheses:
   Enabled: true
+Naming/MemoizedInstanceVariableName:
+  Enabled: true
 
 # These checks are valid, but better left to programmer's discretion, as the effects of such code are harmless.
 Lint/DuplicateBranch:
@@ -367,8 +369,6 @@ Style/HashLikeCase:
 Style/OpenStructUse:
   Enabled: false
 Style/RedundantConstantBase: # new in 1.40
-  Enabled: false
-Naming/MemoizedInstanceVariableName:
   Enabled: false
 Style/ConditionalAssignment:
   Enabled: false
