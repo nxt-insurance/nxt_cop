@@ -1,9 +1,9 @@
 require:
-- rubocop-factory_bot
-- rubocop-rails
-- rubocop-rspec
-- rubocop-rspec_rails
-- ./custom_cops/nxt_core/rails/use_of_rails_logger.rb
+  - rubocop-factory_bot
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-rspec_rails
+  - ./custom_cops/nxt_core/rails/use_of_rails_logger.rb
 
 inherit_mode:
   merge:
@@ -26,7 +26,6 @@ AllCops:
     - node_modules/**/*
   DisabledByDefault: false
   NewCops: disable # to avoid warnings. TODO: remove this setting and add new cops from the warning.
-
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
@@ -136,7 +135,7 @@ Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: false
 Lint/LambdaWithoutLiteralBlock:
   Enabled: false
-Lint/NoReturnInBeginEndBlocks:  # ❌ ENABLE THIS!
+Lint/NoReturnInBeginEndBlocks: # ❌ ENABLE THIS!
   Enabled: false
 Lint/NumberedParameterAssignment:
   Enabled: false
@@ -308,7 +307,7 @@ Rails/IndexBy:
   Enabled: false
 Rails/Pick:
   Enabled: false
-Style/CombinableLoops:  # hard to autocorrect properly
+Style/CombinableLoops: # hard to autocorrect properly
   Enabled: false
 FactoryBot/CreateList:
   Enabled: false
@@ -320,7 +319,7 @@ Style/GuardClause:
   Enabled: false
 Style/PercentLiteralDelimiters:
   Enabled: false
-Style/StringConcatenation:  # heavily used in insurance service
+Style/StringConcatenation: # heavily used in insurance service
   Enabled: false
 Style/InverseMethods:
   Enabled: false
@@ -393,7 +392,7 @@ Rails/UniqueValidationWithoutIndex: # definitely enable!!!
   Enabled: false
 Rails/Validation: # discuss with the team
   Enabled: false
-Rails/LexicallyScopedActionFilter:  # enable and manually disable offences
+Rails/LexicallyScopedActionFilter: # enable and manually disable offences
   Enabled: false
 Security/Open:
   Enabled: false
