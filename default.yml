@@ -64,6 +64,7 @@ Layout/FirstArrayElementLineBreak:
 Layout/MultilineMethodParameterLineBreaks:
   Enabled: true
 
+# Lint
 Lint:
   Enabled: true
 Lint/AmbiguousBlockAssociation:
@@ -75,24 +76,6 @@ Lint/MissingSuper:
   Enabled: false
 Lint/SymbolConversion:
   EnforcedStyle: consistent
-Style/TrailingCommaInHashLiteral:
-  Enabled: false
-Style/HashSyntax:
-  Enabled: true
-  EnforcedShorthandSyntax: either
-Security:
-  EnabledByDefault: true
-Style/Semicolon:
-  Exclude:
-    - spec/**/*
-Rails/TimeZone:
-  Enabled: true
-Rails/Date:
-  Enabled: true
-RSpec:
-  Enabled: false
-RSpec/Focus:
-  Enabled: true
 Lint/AmbiguousAssignment:
   Enabled: true
 Lint/DeprecatedConstants:
@@ -116,7 +99,7 @@ Lint/RedundantDirGlobSort:
 Lint/RequireRangeParentheses:
   Enabled: true
 
-# These checks are valid, but better left to programmer's discretion, as the effects of such code are harmless.
+# Lint - These checks are valid, but better left to programmer's discretion, as the effects of such code are harmless.
 Lint/DuplicateBranch:
   Enabled: false
 Lint/DuplicateRegexpCharacterClassElement:
@@ -130,7 +113,7 @@ Lint/EmptyInPattern:
 Lint/UnexpectedBlockArity:
   Enabled: false
 
-# These code patterns are rare/nonexistent in our code, so checking for them is a waste of time
+# Lint - These code patterns are rare/nonexistent in our code, so checking for them is a waste of time
 Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: false
 Lint/LambdaWithoutLiteralBlock:
@@ -148,7 +131,7 @@ Lint/ToEnumArguments:
 Lint/UselessRuby2Keywords:
   Enabled: false
 
-# Since we don't have all cops enabled by default we have to add every new cop explicitly
+# Lint - Since we don't have all cops enabled by default we have to add every new cop explicitly
 Lint/DuplicateMagicComment:
   Enabled: true
 Lint/UselessRescue:
@@ -158,6 +141,25 @@ Lint/DuplicateMatchPattern:
 Lint/MixedCaseRange:
   Enabled: true
 Lint/RedundantRegexpQuantifiers:
+  Enabled: true
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: either
+Security:
+  EnabledByDefault: true
+Style/Semicolon:
+  Exclude:
+    - spec/**/*
+Rails/TimeZone:
+  Enabled: true
+Rails/Date:
+  Enabled: true
+RSpec:
+  Enabled: false
+RSpec/Focus:
   Enabled: true
 
 # This is default cops we want to keep disabled:
