@@ -1,3 +1,7 @@
+# v2.6.0
+## What's Changed
+- Enables `Naming/MemoizedInstanceVariableName` cop (autocorrection: Always (Unsafe))
+
 # v2.5.1 2024-06-12
 ## What's Changed
 - Adds rubocop-rspec_rails to `.default.yml` to restore previous functionality
@@ -87,7 +91,7 @@ Bumped dependencies version
 ## What's Changed
 * Add `Layout/SpaceBeforeComma`
 * Add `Layout/SpaceAfterComma`
-* Add `Layout/EmptyLines` cops ([#80](https://github.com/nxt-insurance/nxt_cop/pull/80)) 
+* Add `Layout/EmptyLines` cops ([#80](https://github.com/nxt-insurance/nxt_cop/pull/80))
 
 **Full Changelog**: https://github.com/nxt-insurance/nxt_cop/compare/v1.0.18...v1.0.19
 
