@@ -1,9 +1,9 @@
 require:
-- rubocop-factory_bot
-- rubocop-rails
-- rubocop-rspec
-- rubocop-rspec_rails
-- ./custom_cops/nxt_core/rails/use_of_rails_logger.rb
+  - rubocop-factory_bot
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-rspec_rails
+  - ./custom_cops/nxt_core/rails/use_of_rails_logger.rb
 
 inherit_mode:
   merge:
@@ -26,7 +26,6 @@ AllCops:
     - node_modules/**/*
   DisabledByDefault: false
   NewCops: disable # to avoid warnings. TODO: remove this setting and add new cops from the warning.
-
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
@@ -65,35 +64,44 @@ Layout/FirstArrayElementLineBreak:
 Layout/MultilineMethodParameterLineBreaks:
   Enabled: true
 
+# Lint
 Lint:
   Enabled: true
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
+Lint/AssignmentInCondition:
+  Enabled: true
+Lint/DuplicateHashKey:
+  Enabled: true
+Lint/DuplicateRegexpCharacterClassElement:
+  Enabled: true
+Lint/EmptyInPattern:
+  Enabled: true
+Lint/IncompatibleIoSelectWithFiberScheduler:
+  Enabled: true
+Lint/LambdaWithoutLiteralBlock:
+  Enabled: true
 Lint/Loop:
-  Enabled: false
+  Enabled: true
 Lint/MissingSuper:
-  Enabled: false
+  Enabled: true
+Lint/NoReturnInBeginEndBlocks:
+  Enabled: true
+Lint/NumberedParameterAssignment:
+  Enabled: true
+Lint/RefinementImportMethods:
+  Enabled: true
+Lint/RequireRelativeSelfPath:
+  Enabled: true
+Lint/ToEnumArguments:
+  Enabled: true
+Lint/UnexpectedBlockArity:
+  Enabled: true
+Lint/UselessRuby2Keywords:
+  Enabled: true
 Lint/SymbolConversion:
   EnforcedStyle: consistent
-Style/TrailingCommaInHashLiteral:
-  Enabled: false
-Style/HashSyntax:
-  Enabled: true
-  EnforcedShorthandSyntax: either
-Security:
-  EnabledByDefault: true
-Style/Semicolon:
-  Exclude:
-    - spec/**/*
-Rails/TimeZone:
-  Enabled: true
-Rails/Date:
-  Enabled: true
-RSpec:
-  Enabled: false
-RSpec/Focus:
-  Enabled: true
 Lint/AmbiguousAssignment:
   Enabled: true
 Lint/DeprecatedConstants:
@@ -117,39 +125,15 @@ Lint/RedundantDirGlobSort:
 Lint/RequireRangeParentheses:
   Enabled: true
 
-# These checks are valid, but better left to programmer's discretion, as the effects of such code are harmless.
+# Lint - These checks are valid, but better left to programmer's discretion, as the effects of such code are harmless.
 Lint/DuplicateBranch:
-  Enabled: false
-Lint/DuplicateRegexpCharacterClassElement:
   Enabled: false
 Lint/EmptyBlock:
   Enabled: false
 Lint/EmptyClass:
   Enabled: false
-Lint/EmptyInPattern:
-  Enabled: false
-Lint/UnexpectedBlockArity:
-  Enabled: false
 
-# These code patterns are rare/nonexistent in our code, so checking for them is a waste of time
-Lint/IncompatibleIoSelectWithFiberScheduler:
-  Enabled: false
-Lint/LambdaWithoutLiteralBlock:
-  Enabled: false
-Lint/NoReturnInBeginEndBlocks:  # ❌ ENABLE THIS!
-  Enabled: false
-Lint/NumberedParameterAssignment:
-  Enabled: false
-Lint/RefinementImportMethods:
-  Enabled: false
-Lint/RequireRelativeSelfPath:
-  Enabled: false
-Lint/ToEnumArguments:
-  Enabled: false
-Lint/UselessRuby2Keywords:
-  Enabled: false
-
-# Since we don't have all cops enabled by default we have to add every new cop explicitly
+# Lint - Since we don't have all cops enabled by default we have to add every new cop explicitly
 Lint/DuplicateMagicComment:
   Enabled: true
 Lint/UselessRescue:
@@ -159,6 +143,25 @@ Lint/DuplicateMatchPattern:
 Lint/MixedCaseRange:
   Enabled: true
 Lint/RedundantRegexpQuantifiers:
+  Enabled: true
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: either
+Security:
+  EnabledByDefault: true
+Style/Semicolon:
+  Exclude:
+    - spec/**/*
+Rails/TimeZone:
+  Enabled: true
+Rails/Date:
+  Enabled: true
+RSpec:
+  Enabled: false
+RSpec/Focus:
   Enabled: true
 
 # This is default cops we want to keep disabled:
@@ -308,7 +311,7 @@ Rails/IndexBy:
   Enabled: false
 Rails/Pick:
   Enabled: false
-Style/CombinableLoops:  # hard to autocorrect properly
+Style/CombinableLoops: # hard to autocorrect properly
   Enabled: false
 FactoryBot/CreateList:
   Enabled: false
@@ -320,7 +323,7 @@ Style/GuardClause:
   Enabled: false
 Style/PercentLiteralDelimiters:
   Enabled: false
-Style/StringConcatenation:  # heavily used in insurance service
+Style/StringConcatenation: # heavily used in insurance service
   Enabled: false
 Style/InverseMethods:
   Enabled: false
@@ -393,7 +396,7 @@ Rails/UniqueValidationWithoutIndex: # definitely enable!!!
   Enabled: false
 Rails/Validation: # discuss with the team
   Enabled: false
-Rails/LexicallyScopedActionFilter:  # enable and manually disable offences
+Rails/LexicallyScopedActionFilter: # enable and manually disable offences
   Enabled: false
 Security/Open:
   Enabled: false
