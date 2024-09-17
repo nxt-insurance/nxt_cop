@@ -16,7 +16,8 @@ jobs:
       - ruby/install-deps:
           key: gems-v1
           include-branch-in-cache-key: false
-      # - ruby/rubocop-check
+      - run: Lint
+        command: bundle exec standardrb --format progress
       - run:
           name: RSpec Tests
           command: |-

@@ -95,4 +95,4 @@ RSpec.configure do |config|
   #   Kernel.srand config.seed
 end
 
-require 'rubocop'
+require "rubocop"
