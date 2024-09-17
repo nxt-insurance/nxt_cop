@@ -1,4 +1,0 @@
-inherit_from: default.yml
-
-Rails:
-  Enabled: false
