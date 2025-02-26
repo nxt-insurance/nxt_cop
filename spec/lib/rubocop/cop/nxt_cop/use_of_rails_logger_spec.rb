@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative '../../custom_cops/nxt_core/rails/use_of_rails_logger'
+require 'rubocop/cop/nxt_cop/use_of_rails_logger'
 
-RSpec.describe CustomCops::NxtCore::Rails::UseOfRailsLogger do
+RSpec.describe Rubocop::Cop::NxtCop::UseOfRailsLogger do
   let(:config) do
     RuboCop::Config.new(
       {

@@ -1,3 +1,9 @@
+# v2.6.0 2025-02-26
+
+## What's Changed
+
+- Moves customs cops to namespace `Rubocop::Cop::NxtCop` so they can be required directly from the application without it being part of nxt_cop's `default.yml`.
+
 # v2.5.1 2024-06-12
 ## What's Changed
 - Adds rubocop-rspec_rails to `.default.yml` to restore previous functionality
