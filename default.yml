@@ -3,14 +3,14 @@ require:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-rspec_rails
-  - ./custom_cops/nxt_core/rails/use_of_rails_logger.rb
+  - rubocop/cop/nxt_cop/use_of_rails_logger.rb
 
 inherit_mode:
   merge:
     - Exclude
     - Include
 
-Rails/UseOfRailsLogger:
+NxtCop/UseOfRailsLogger:
   Description: "Custom Getsafe cop to ensure the correct logger is used"
 
 AllCops:

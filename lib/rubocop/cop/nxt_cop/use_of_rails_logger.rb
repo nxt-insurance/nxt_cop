@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-module CustomCops
-  module NxtCore
-    module Rails
+module Rubocop
+  module Cop
+    module NxtCop
       # Ensures that the NxtCore logger is used instead of `Rails.logger`.
       class UseOfRailsLogger < RuboCop::Cop::Base
         extend RuboCop::Cop::AutoCorrector
