@@ -1,3 +1,9 @@
+# v2.7.0 2025-11-20
+
+## What's Changed
+
+- Uses the new API for extensions, which was introduced in Rubocop 1.72 (https://docs.rubocop.org/rubocop/plugin_migration_guide.html).
+
 # v2.6.0 2025-02-26
 
 ## What's Changed
