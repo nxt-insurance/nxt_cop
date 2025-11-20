@@ -1,8 +1,10 @@
-require:
+plugins:
   - rubocop-factory_bot
   - rubocop-rails
   - rubocop-rspec
   - rubocop-rspec_rails
+
+require:
   - rubocop/cop/nxt_cop/use_of_rails_logger.rb
 
 inherit_mode:
