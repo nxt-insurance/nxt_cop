@@ -1,3 +1,8 @@
+# v2.8.0 2026-01-26
+## What's Changed
+- Updates the ruby version to 4.0.1
+- Updates dependencies
+
 # v2.7.0 2025-11-20
 
 ## What's Changed
