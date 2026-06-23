@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 3.2'
 
   spec.add_dependency 'rubocop', '~> 1.72'
-  spec.add_dependency 'rubocop-capybara', '~> 2.21'
+  spec.add_dependency 'rubocop-capybara', '~> 3.0'
   spec.add_dependency 'rubocop-factory_bot', '~> 2.26'
   spec.add_dependency 'rubocop-rails', '~> 2.8'
   spec.add_dependency 'rubocop-rspec', '~> 3.0'
