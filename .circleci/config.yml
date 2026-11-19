@@ -10,7 +10,7 @@ jobs:
     parallelism: 1
     resource_class: small
     docker:
-      - image: cimg/ruby:4.0.1
+      - image: cimg/ruby:4.0.10
     steps:
       - checkout
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ca-certificates
